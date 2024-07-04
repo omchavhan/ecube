@@ -858,9 +858,9 @@ h6 {
 :root {
   --theme-font-1: "Inter", sans-serif;
   --theme-font-2: "Plus Jakarta Sans", sans-serif;
-  --primary-color-1: #57B33E;
+  --primary-color-1: #29a3ff;
   --primary-color-2: #29a3ff;
-  --primary-color-3: #038243;
+  --primary-color-3: #29a3ff;
   --text-white: #FFFFFF;
   --bg-white: #FFFFFF;
   --text-heading-color: #1F242C;
@@ -3461,7 +3461,7 @@ h6 {
   z-index: 1;
 }
 .header__area-menubar-left.one::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   left: -3800px;
   top: -2px;
