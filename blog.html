@@ -10,7 +10,7 @@
 	<meta name="author" content="ThemeOri">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Title of Site -->
-	<title>Contact Us</title>
+	<title>Blogs</title>
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<!-- Bootstrap CSS -->
@@ -20,16 +20,92 @@
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<!-- Flaticon -->
-	<link rel="stylesheet" href="assets/font/flaticon_slaze.css">	
+	<link rel="stylesheet" href="assets/font/flaticon_slaze.css">
 	<!-- Swiper Bundle CSS -->
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 	<!-- Magnific Popup CSS -->
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/sass/style.css"> 
+	<link rel="stylesheet" href="assets/sass/style.css">
 </head>
 
 <body>
+	<style>
+		.blog__standard-item {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+		}
+
+		.blog__standard-item-content-wrapper {
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+		}
+
+		.blog__standard-item-image {
+			flex: 1;
+			min-width: 300px;
+		}
+
+		.blog__standard-item-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.blog__standard-item-content {
+			flex: 2;
+			padding-left: 20px;
+		}
+
+		.blog__standard-item-content-meta ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		.blog__standard-item-content-meta ul li {
+			display: inline-block;
+		}
+
+		.blog__standard-item-content-meta ul li a {
+			text-decoration: none;
+			color: #333;
+		}
+
+		h5 {
+			margin-top: 10px;
+			font-size: 1.5rem;
+		}
+
+		p {
+			margin: 10px 0;
+		}
+
+		.btn-one {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #000;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+		@media (max-width: 768px) {
+			.blog__standard-item-content-wrapper {
+				flex-direction: column;
+			}
+
+			.blog__standard-item-content {
+				padding-left: 0;
+				padding-top: 20px;
+			}
+		}
+	</style>
 	<!-- Preloader Start -->
 	<div class="theme-loader">
 		<div class="spinner">
@@ -45,15 +121,25 @@
 		<span class="mode__switch" onclick="darkLight()"><span></span></span>
 		<span class="switch__tab-btn dark-mode-title">Dark</span>
 	</div>
-	<!-- Dark Light End -->	
-	
+	<!-- Dark Light End -->
+
+	<!-- Search Box Start -->
+	<div class="header__area-menubar-right-search-box">
+		<form>
+			<input type="search" placeholder="Search Here.....">
+			<button type="submit"><i class="fal fa-search"></i></button>
+		</form>
+		<span class="header__area-menubar-right-search-box-icon"><i class="fal fa-times"></i></span>
+	</div>
+	<!-- Search Box End -->
 	<!-- Hamburger Start -->
-	<div class="header__area-menubar-right-sidebar-popup">
+	<div class="header__area-menubar-right-sidebar-popup three">
 		<div class="sidebar-close-btn"><i class="fal fa-times"></i></div>
 		<div class="header__area-menubar-right-sidebar-popup-logo">
-			<a href="index.html"> <img src="assets/img/ecube footer - logo.png" alt="Logo-image"></a>
+			<a href="index.html"> <img src="assets/img/ecube footer - logo.png" alt="Logo-image" ></a>
 		</div>
-		<p>The insurance company assumes the financial risk of covering these events in exchange for the premiums paid by the policyholder. There are many different types of insurance,</p>
+		<p>The insurance company assumes the financial risk of covering these events in exchange for the premiums paid
+			by the policyholder. There are many different types of insurance,</p>
 		<div class="header__area-menubar-right-sidebar-popup-contact">
 			<h4 class="mb-30">Get In Touch</h4>
 			<div class="header__area-menubar-right-sidebar-popup-contact-item">
@@ -62,7 +148,7 @@
 				</div>
 				<div class="header__area-menubar-right-sidebar-popup-contact-item-content">
 					<span>Call Now</span>
-					<h6><a href="tel:++91 81493 30610">+91 81493 30610</a></h6>
+					<h6><a href="tel:+91 81493 30610">+91 81493 30610</a></h6>
 				</div>
 			</div>
 			<div class="header__area-menubar-right-sidebar-popup-contact-item">
@@ -80,7 +166,8 @@
 				</div>
 				<div class="header__area-menubar-right-sidebar-popup-contact-item-content">
 					<span>Office Address</span>
-					<h6><a href="https://google.com/maps" target="_blank">Shanti Tower, 4 & 5, Vakil Wadi, nr. Dinesh Sarees, Ashok Stambh, Raviwar Karanja, Panchavati, Nashik</a></h6>
+					<h6><a href="https://maps.app.goo.gl/tPYMydLVPZPHDijRA" target="_blank">Shanti Tower, 4 & 5, Vakil
+							Wadi, nr. Dinesh Sarees, Ashok Stambh,Nashik</a></h6>
 				</div>
 			</div>
 		</div>
@@ -90,7 +177,7 @@
 				<li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
 				<li><a href="https://behance.net" target="_blank"><i class="fab fa-behance"></i></a></li>
 				<li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-			</ul>							
+			</ul>
 		</div>
 	</div>
 	<div class="sidebar-overlay"></div>
@@ -98,7 +185,7 @@
 	<!-- Mobile Menu Start -->
 	<div class="menu__bar-popup">
 		<div class="menu__bar-popup-top">
-			<div class="logo"><a href="index.html"><img src="assets/img/ecube footer - logo.png" alt="logo-image"></a></div>			
+			<div class="logo"><a href="index.html"><img src="assets/img/logo-2.png" alt="logo-image"></a></div>
 			<div class="close"><i class="fal fa-times"></i></div>
 
 		</div>
@@ -168,7 +255,7 @@
                                 </ul> -->
 							</li>
 							<li><a href="project-four.html">Project</a></li>
-							<li><a href="#">Blog</a>
+							<li><a href="blog.html">Blog</a>
 								<!-- <ul class="sub-menu">
 									<li class="menu-item-has-children"><a href="#">Blog Grid</a>
 										<ul class="sub-menu">
@@ -215,107 +302,134 @@
 		</div>
 	</div>
 	<!-- Header Area End -->
-    <!-- Breadcrumb Area Start -->
-    <div class="breadcrumb__area" data-background="assets/img/pages/breadcrumb.webp">
+	<!-- Breadcrumb Area Start -->
+	<div class="breadcrumb__area" data-background="assets/img/pages/breadcrumb.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="breadcrumb__area-content">
-						<h1>Contact Us</h1>
+						<h1>Blog</h1>
 						<ul>
 							<li><a href="index.html">Home</a><i class="fa-regular fa-angle-right"></i></li>
-							<li>Contact Us</li>
+							<li>Blogs</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>       
-    <!-- Breadcrumb Area End -->
-    <!-- Contact Area Start -->
-	<div class="contact__one section-padding-three">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="contact__one-item">
-						<i class="flaticon-telephone-call"></i>
-						<span>Phone :</span>
-						<h6><a href="tel:+91 81493 30610">+91 81493 30610</a></h6>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="contact__one-item">
-						<i class="flaticon-mail"></i>
-						<span>Email Address :</span>
-						<h6><a href="mailto:help@gmail.com">help@gmail.com</a></h6>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="contact__one-item" style="padding-top: 10px;padding-bottom: 10px;">
-						<i class="flaticon-location-1" ></i>
-						<span>Location :</span>
-						<h6><a href="https://maps.app.goo.gl/tPYMydLVPZPHDijRA">Shanti Tower, 4 & 5, Vakil Wadi, nr. Dinesh Sarees, Ashok Stambh,Nashik</a></h6>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="contact__one-item" >
-						<i class="flaticon-wall-clock"></i>
-						<span>Opening Hours :</span>
-						<h6>Mon-Fri 09 am-05 PM</h6>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-    <!-- Contact Area End -->
-    <!-- Contact Form Area Start -->
-	<div class="contact__form section-padding pt-0">
+	<!-- Breadcrumb Area End -->
+	
+	<!-- Blog Standard Area Start -->
+	<div class="blog__standard-arae section-padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7 lg-mb-25">
-					<div class="contact__form-area">
-						<h3>Get In touch</h3>
-						<form action="#">
-							<div class="row">
-								<div class="col-md-6 mb-30">
-									<div class="contact__form-area-item">										
-										<input type="text" name="name" placeholder="Full Name" required="required">
-									</div>
-								</div>
-								<div class="col-md-6 md-mb-30">
-									<div class="contact__form-area-item">										
-										<input type="email" name="email" placeholder="Email Address" required="required">											
-									</div>
-								</div>
-								<div class="col-md-12 mb-30">
-									<div class="contact__form-area-item">										
-										<input type="text" name="subject" placeholder="Subject">
-									</div>
-								</div>
-								<div class="col-md-12 mb-30">
-									<div class="contact__form-area-item">										
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="contact__form-area-item">
-										<button class="btn-one" type="submit">Submit Message</button>
-									</div>
-								</div>
+				<div class="col-xl-12">
+					<div class="blog__standard dark_image">
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/blog-1.jpg"
+										alt="blog-standard">
 							</div>
-						</form>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+										
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>13, March 2024</a></li>
+										
+									</ul>
+								</div>
+								<h5>The Future of Solar Energy: Innovations and Trends to Watch
+								</h5>
+								<p>Dive deep into the evolving landscape of solar energy, exploring cutting-edge innovations and emerging trends that are shaping the industry. Discuss advancements in solar panel efficiency, new materials and designs, and the integration of solar with smart home technologies like energy storage systems and grid integration. Highlight the environmental benefits of solar energy and its role in sustainable development, offering insights into how consumers and businesses can benefit from adopting solar solutions.</p>
+								
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/blog-2.jpg"
+										alt="blog-details-image">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+										
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>14,Jan 2024</a></li>
+										
+									</ul>
+								</div>
+								<h5>Enhancing Home Security: A Guide to Choosing the Right CCTV System
+								</h5>
+								<p>In this comprehensive guide, provide readers with everything they need to know about selecting and installing CCTV camera systems for various residential and commercial applications. Cover topics such as different types of cameras (e.g., dome, bullet, PTZ), features to consider (e.g., resolution, night vision, motion detection), and the importance of video storage and remote monitoring capabilities. Include practical tips on camera placement for optimal security coverage and discuss how integrating CCTV systems with other smart security solutions can provide enhanced protection and peace of mind.</p>
+								
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/blog-3.jpg"
+										alt="blog-standard">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+										
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>07, Dec 2023</a></li>
+										
+									</ul>
+								</div>
+								<h5>Smart Homes 101: How Home Automation is Transforming Daily Living
+								</h5>
+								<p>Explore the growing popularity of smart home technology and its impact on modern lifestyles. Delve into the benefits of home automation systems, such as energy efficiency, convenience, and improved home security. Provide an overview of popular smart devices and systems available today, from smart lighting and thermostats to voice-controlled assistants and integrated home security systems. Include real-life examples and case studies of how homeowners can benefit from automating their homes, and offer practical advice on choosing and installing smart devices that best suit their needs.</p>
+								
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/blog-3.jpg"
+										alt="blog-standard">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+										
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>04, Aust 2023</a></li>
+										
+									</ul>
+								</div>
+								<h5>The Importance of Vehicle Tracking Systems for Fleet Management
+								</h5>
+								<p>Discuss the critical role of GPS vehicle tracking systems in optimizing fleet operations and improving business efficiency. Explain how vehicle trackers work and their key features, such as real-time location tracking, route optimization, and driver behavior monitoring. Highlight the benefits for businesses, including reduced fuel costs, improved fleet safety and security, enhanced customer service through accurate delivery tracking, and compliance with regulatory requirements. Provide insights into choosing the right vehicle tracking solution based on fleet size, industry-specific needs, and budget considerations.</p>
+								
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/blog-3.jpg"
+										alt="blog-standard">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+										
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>07, March 2024</a></li>
+										
+									</ul>
+								</div>
+								<h5>"Biometric Technology: Revolutionizing Attendance Management in the Workplace
+								</h5>
+								<p>Examine the transformative impact of biometric technology on attendance management practices in workplaces and educational institutions. Discuss the advantages of biometric systems, such as fingerprint and facial recognition, over traditional attendance methods like paper logs and swipe cards. Explore how biometrics enhance accuracy, efficiency, and security in tracking employee attendance and student attendance, while also addressing privacy concerns and regulatory compliance. Showcase case studies of organizations that have successfully implemented biometric attendance systems and achieved operational improvements and cost savings.</p>
+								
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-5">
-					<div class="contact__one-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.0501785410247!2d73.7859459!3d20.0064086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba8d5744375%3A0xa7c52c10cbf86506!2sShanti%20Tower%2C%20Vakil%20Wadi%2C%20Ashok%20Stambh%2C%20Raviwar%20Karanja%2C%20Panchavati%2C%20Nashik%2C%20Maharashtra%20422001!5e0!3m2!1sen!2sin!4v1720177812126!5m2!1sen!2sin"  loading="lazy"></iframe>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 	</div>
-    <!-- Contact Form Area End -->
-	<!-- Footer Cta Area Start -->
+	<!-- Blog Standard Area End -->
+
+	<!-- Footer Area Start -->
 	<div class="footer__area three" data-background="assets/img/shape/shape-13.png" style="padding-bottom: 50px;">
 		<div class="container">
 			<div class="row">
@@ -351,9 +465,9 @@
 								<div class="footer-widget-menu">
 									<ul>
 										<li><a href="about.html">About Us</a></li>
-										<li><a href="blog-grid-three.html">Blog</a></li>
-										<li><a href="testimonial.html">Testimonials</a></li>
-										<li><a href="faq.html">Faqs</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										
+										
 										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
 								</div>
@@ -368,11 +482,11 @@
 								<h6>Our Services</h6>
 								<div class="footer-widget-menu">
 									<ul>
-										<li><a href="blog-grid-three.html">Wind Turbines</a></li>
-										<li><a href="blog-grid-three.html">Hydropower</a></li>
-										<li><a href="blog-grid-three.html">Solar Panel</a></li>
-										<li><a href="blog-grid-three.html">Fossil Resources</a></li>
-										<li><a href="blog-grid-three.html">Maintenance</a></li>
+										<li><a href="service.html">Wind Turbines</a></li>
+										<li><a href="service.html">Hydropower</a></li>
+										<li><a href="service.html">Solar Panel</a></li>
+										<li><a href="service.html">Fossil Resources</a></li>
+										<li><a href="service.html">Maintenance</a></li>
 									</ul>
 								</div>
 							</div>
@@ -384,13 +498,14 @@
 		</div>
 
 	</div>
-	<!-- Footer Cta Area End -->
-
+	<!-- Footer Area End -->
 	<!-- Scroll Btn Start -->
 	<div class="scroll-up">
-		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /> </svg>
+		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+		</svg>
 	</div>
-	<!-- Scroll Btn End -->	
+	<!-- Scroll Btn End -->
 	<!-- Main JS -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
 	<!-- Bootstrap JS -->
@@ -400,16 +515,17 @@
 	<!-- Popper JS -->
 	<script src="assets/js/popper.min.js"></script>
 	<!-- Progressbar JS -->
-	<script src="assets/js/progressbar.min.js"></script>	
+	<script src="assets/js/progressbar.min.js"></script>
 	<!-- Magnific Popup JS -->
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<!-- Swiper Bundle JS -->
 	<script src="assets/js/swiper-bundle.min.js"></script>
-    <!-- Isotope JS -->
+	<!-- Isotope JS -->
 	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<!-- Waypoints JS -->
 	<script src="assets/js/jquery.waypoints.min.js"></script>
 	<!-- Custom JS -->
 	<script src="assets/js/custom.js"></script>
 </body>
+
 </html>

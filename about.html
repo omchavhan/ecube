@@ -20,16 +20,109 @@
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<!-- Flaticon -->
-	<link rel="stylesheet" href="assets/font/flaticon_slaze.css">	
+	<link rel="stylesheet" href="assets/font/flaticon_slaze.css">
 	<!-- Swiper Bundle CSS -->
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 	<!-- Magnific Popup CSS -->
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/sass/style.css"> 
+	<link rel="stylesheet" href="assets/sass/style.css">
 </head>
 
 <body>
+	<style>
+	.consultation__area {
+		padding: 50px 0;
+	}
+	
+	.consultation__area-right {
+		/* background: #f9f9f9; */
+		padding: 20px;
+		border-radius: 8px;
+	}
+	
+	.consultation__area-right-title {
+		margin-bottom: 20px;
+	}
+	
+	.consultation__area-right-title h4 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+	
+	.consultation__area-right-title h6 {
+		margin-top: 10px;
+		color: #29a3ff;
+		font-size: 1.25rem;
+	}
+	
+	.consultation__area-right-title p {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 15px;
+		color: #333;
+	}
+	
+	.highlight {
+		margin-top: 10px;
+		color: #29a3ff;
+	}
+	
+	@media (max-width: 992px) {
+		.consultation__area {
+			padding: 40px 0;
+		}
+	
+		.consultation__area-right-title h4 {
+			font-size: 1.75rem;
+		}
+	
+		.consultation__area-right-title h6 {
+			font-size: 1.1rem;
+		}
+	
+		.consultation__area-right-title p {
+			font-size: 0.95rem;
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.consultation__area {
+			padding: 30px 0;
+		}
+	
+		.consultation__area-right {
+			padding: 15px;
+		}
+	
+		.consultation__area-right-title h4 {
+			font-size: 1.5rem;
+		}
+	
+		.consultation__area-right-title h6 {
+			font-size: 1rem;
+		}
+	
+		.consultation__area-right-title p {
+			font-size: 0.9rem;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.consultation__area-right-title h4 {
+			font-size: 1.25rem;
+		}
+	
+		.consultation__area-right-title h6 {
+			font-size: 0.9rem;
+		}
+	
+		.consultation__area-right-title p {
+			font-size: 0.85rem;
+		}
+	}
+	</style>
+	
 	<!-- Preloader Start -->
 	<div class="theme-loader">
 		<div class="spinner">
@@ -45,14 +138,15 @@
 		<span class="mode__switch" onclick="darkLight()"><span></span></span>
 		<span class="switch__tab-btn dark-mode-title">Dark</span>
 	</div>
-	<!-- Dark Light End -->	
+	<!-- Dark Light End -->
 	<!-- Top Bar Area Start -->
 	<div class="header__area" style="height: 100px;">
 		<div class="custom__container">
 			<div class="header__area-menubar" style="height: 100px;">
 				<div class="header__area-menubar-left one">
 					<div class="header__area-menubar-left-logo">
-						<a href="index.html"><img src="assets/img/ecube-logo.png" alt="logo" style="margin-left: 30px;"></a>
+						<a href="index.html"><img src="assets/img/ecube-logo.png" alt="logo"
+								style="margin-left: 30px;"></a>
 					</div>
 				</div>
 				<div class="header__area-menubar-center">
@@ -104,7 +198,7 @@
                                 </ul> -->
 							</li>
 							<li><a href="project-four.html">Project</a></li>
-							<li><a href="#">Blog</a>
+							<li><a href="blog.html">Blog</a>
 								<!-- <ul class="sub-menu">
 									<li class="menu-item-has-children"><a href="#">Blog Grid</a>
 										<ul class="sub-menu">
@@ -128,7 +222,7 @@
 									</li>
                                 </ul> -->
 							</li>
-							<li "><a href=" contact-two.html">Contact</a>
+							<li ><a href=" contact-two.html">Contact</a>
 								<!-- <ul class="sub-menu">
                             		<li><a href="contact.html">Contact Style 01</a></li>
                             		<li><a href="contact-two.html">Contact Style 02</a></li>
@@ -166,7 +260,8 @@
 		<div class="header__area-menubar-right-sidebar-popup-logo">
 			<a href="index.html"> <img src="assets/img/ecube footer - logo.png" alt="Logo-image"></a>
 		</div>
-		<p>The insurance company assumes the financial risk of covering these events in exchange for the premiums paid by the policyholder. There are many different types of insurance,</p>
+		<p>The insurance company assumes the financial risk of covering these events in exchange for the premiums paid
+			by the policyholder. There are many different types of insurance,</p>
 		<div class="header__area-menubar-right-sidebar-popup-contact">
 			<h4 class="mb-30">Get In Touch</h4>
 			<div class="header__area-menubar-right-sidebar-popup-contact-item">
@@ -194,7 +289,7 @@
 				<div class="header__area-menubar-right-sidebar-popup-contact-item-content">
 					<span>Office Address</span>
 					<h6><a href="https://maps.app.goo.gl/tPYMydLVPZPHDijRA" target="_blank">Shanti Tower, 4 & 5, Vakil
-						Wadi, nr. Dinesh Sarees, Ashok Stambh,Nashik</a></h6>
+							Wadi, nr. Dinesh Sarees, Ashok Stambh,Nashik</a></h6>
 				</div>
 			</div>
 		</div>
@@ -204,7 +299,7 @@
 				<li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
 				<li><a href="https://behance.net" target="_blank"><i class="fab fa-behance"></i></a></li>
 				<li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-			</ul>							
+			</ul>
 		</div>
 	</div>
 	<div class="sidebar-overlay"></div>
@@ -212,7 +307,7 @@
 	<!-- Mobile Menu Start -->
 	<div class="menu__bar-popup">
 		<div class="menu__bar-popup-top">
-			<div class="logo"><a href="index.html"><img src="assets/img/logo-2.png" alt="logo-image"></a></div>			
+			<div class="logo"><a href="index.html"><img src="assets/img/logo-2.png" alt="logo-image"></a></div>
 			<div class="close"><i class="fal fa-times"></i></div>
 
 		</div>
@@ -224,9 +319,9 @@
 	</div>
 	<div class="menu__bar-popup-overlay"></div>
 	<!-- Mobile Menu End -->
-	
-    <!-- Breadcrumb Area Start -->
-    <div class="breadcrumb__area" data-background="assets/img/pages/breadcrumb.webp">
+
+	<!-- Breadcrumb Area Start -->
+	<div class="breadcrumb__area" data-background="assets/img/pages/breadcrumb.webp">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -240,291 +335,104 @@
 				</div>
 			</div>
 		</div>
-	</div>       
-    <!-- Breadcrumb Area End -->
-	<!-- Features Area Start -->
-	<div class="features__one section-padding">
-		<div class="container">
-			<div class="row al-center features__one-bg" data-background="assets/img/shape/shape-10.png">
-				<div class="col-lg-5 lg-mb-25">
-					<div class="features__one-left">
-						<h4>Your Trusted Energy Partner</h4>
-						<div class="features__one-left-client lg-jc-center dark_image">
-							<img src="assets/img/avatar/user.png" alt="client-image">
-							<h6>12,000+ Customer Reviews</h6>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-7">
-					<div class="features__one-right lg-jc-center">
-						<div class="features__one-right-item">
-							<div class="features__one-right-item-icon">
-								<i class="flaticon-profit"></i>
-							</div>
-							<div class="features__one-right-item-content">
-								<h6>Financial Savings</h6>
-								<p>From captivating logos that serve as Brand ambassadors to</p>
-							</div>
-						</div>
-						<div class="features__one-right-item">
-							<div class="features__one-right-item-icon">
-								<i class="flaticon-best-customer-experience"></i>
-							</div>
-							<div class="features__one-right-item-content">
-								<h6>Well Experienced</h6>
-								<p>From captivating logos that serve as Brand ambassadors to</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-	<!-- Features Area End -->
-    <!-- About Area Start -->
-    <div class="about__four section-padding pt-0">
-        <div class="container">
-            <div class="row al-center">
-                <div class="col-lg-6 lg-mb-25">
-                    <div class="about__four-left">
-                        <div class="about__four-left-image dark_image">
+	<!-- Breadcrumb Area End -->
+
+	<!-- About Area Start -->
+	<div class="about__four section-padding pt-0" style="margin-top: 80px;">
+		<div class="container">
+			<div class="row al-center">
+				<div class="col-lg-6 lg-mb-25">
+					<div class="about__four-left">
+						<div class="about__four-left-image dark_image">
 							<div class="about__four-left-image-one">
 								<img src="assets/img/about/about-5.jpg" alt="about">
 							</div>
-                            <div class="about__four-left-image-two">
+							<!-- <div class="about__four-left-image-two">
                                 <img src="assets/img/about/about-6.jpg" alt="about">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about__four-right">
-                        <div class="about__four-right-title">
-                            <span class="subtitle-one">About us</span>
-                            <h2>Rays of Progress & Solar Success</h2>
-                            <p>Rays of Progress & Solar Success serves as a powerful beacon, embodying the transformative journey toward a future powered by the boundless Energy of the sun. It's a vision where each</p>
-                        </div>
-                        <div class="about__four-right-list">
+                            </div> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about__four-right">
+						<div class="about__four-right-title">
+							<span class="subtitle-one">About us</span>
+							<h2>Technology that Powers Your Life</h2>
+							<p>At E Cube Services, we believe in harnessing the power of technology to enhance your
+								everyday experiences. From innovative solar solutions to advanced security systems, our
+								products are designed to make your life smarter, safer, and more sustainable. Join us on
+								our journey to create a brighter, more connected world.</p>
+						</div>
+						<!-- <div class="about__four-right-list">
 							<span><i class="fa-sharp fa-solid fa-circle-check"></i>Business Management</span>
 							<span><i class="fa-sharp fa-solid fa-circle-check"></i>Award Winning Company</span>
 						</div>
-                        <a class="btn-one" href="about.html">Explore now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About Area End -->
-	<!-- Counter Area Start -->
-	<div class="counter__two" data-background="assets/img/shape/shape-18.png">
+                        <a class="btn-one" href="about.html">Explore now</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About Area End -->
+
+	<!-- Experience Area Start -->
+	<div class="experience__area section-padding" data-background="assets/img/shape/shape-20.jpg">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-12">
-					<div class="counter__two-grid">
-						<div class="counter__two-item">
-							<i class="flaticon-project"></i>
-							<h3><span class="counter">1.2</span><b>k</b></h3>
-							<p>Project Success</p>
+				<div class="col-lg-6 lg-mb-25">
+					<div class="experience__area-left">
+						<div class="experience__area-left-title">
+							<span class="subtitle-one">Journey</span>
+							<h2>Our Journey</h2>
+							<p style="text-align: justify;">E Cube Services was born out of a passion for technology and
+								a commitment to a greener future. Our founder, <b>Paresh Mutha (Jain)</b> , envisioned a
+								world where technology not only improves lives but also respects our planet. With this
+								vision, E Cube Services has become a pioneer in solar installation and training through
+								the <b>ECUBE Institute of Technology</b> .</p>
 						</div>
-						<div class="counter__two-item">
-							<i class="flaticon-customer-review"></i>
-							<h3><span class="counter">700</span><b>+</b></h3>
-							<p>Clients Reviews</p>
-						</div>
-						<div class="counter__two-item">
-							<i class="flaticon-rating"></i>
-							<h3><span class="counter">175</span><b>+</b></h3>
-							<p>Team Members</p>
-						</div>
-						<div class="counter__two-item">
-							<i class="flaticon-trophy"></i>
-							<h3><span class="counter">91</span><b>+</b></h3>
-							<p>Winning Awards</p>
-						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="experience__area-image dark_image">
+						<img src="assets/img/pages/experience.jpg" alt="experience">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Counter Area End -->
-    <!-- Experience Area Start -->
-    <div class="experience__area section-padding" data-background="assets/img/shape/shape-20.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 lg-mb-25">
-                    <div class="experience__area-left">
-                        <div class="experience__area-left-title">
-                            <span class="subtitle-one">Our Experience</span>
-                            <h2>Solar Team Experience area</h2>
-                            <p>Business, or everyday living, imagine a world where solar success is not just an aspiration but a reality driven by the Rays of the sun. It's a vision where the</p>
-                        </div>
-						<div class="about__one-right-skill">
-							<div class="skill__area-item">
-								<div class="skill__area-item-content">
-									<h6>Hybrid Energy</h6> 
-									<span class="skill__area-item-count"><span class="counter">76</span>%</span>
-								</div>
-								<div class="skill__area-item-inner">
-									<div class="skill__area-item-bar" data-width="76"></div>
-								</div>
-							</div>
-							<div class="skill__area-item">
-								<div class="skill__area-item-content">
-									<h6>Solar Panel</h6> 
-									<span class="skill__area-item-count"><span class="counter">85</span>%</span>
-								</div>
-								<div class="skill__area-item-inner">
-									<div class="skill__area-item-bar" data-width="85"></div>
-								</div>
-							</div>
-							<div class="skill__area-item">
-								<div class="skill__area-item-content">
-									<h6>Wind Turbines</h6> 
-									<span class="skill__area-item-count"><span class="counter">60</span>%</span>
-								</div>
-								<div class="skill__area-item-inner">
-									<div class="skill__area-item-bar" data-width="60"></div>
-								</div>
-							</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="experience__area-image dark_image">
-                        <img src="assets/img/pages/experience.jpg" alt="experience">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Experience Area End -->
-	<!-- Team Area Start -->
-	<div class="team__one section-padding">
-		<div class="container">
-			<div class="row mb-35">
-				<div class="col-xl-12">
-					<div class="team__one-title t-center">
-						<span class="subtitle-one">We're the best</span>
-						<h2>Solar Design Engineer</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row mb-35 dark_image">
-				<div class="col-lg-3 col-md-6 lg-mb-35">
-					<div class="team__one-item">
-						<div class="team__one-item-image">
-							<img src="assets/img/team/team-1.jpg" alt="team">
-							<div class="team__one-item-image-content">
-								<div class="team__one-item-image-icon">
-									<span><i class="fas fa-share-alt"></i></span>
-									<div class="team__one-item-image-social">
-										<ul>
-											<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
-											<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-											<li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<h6><a href="team-details.html">Steve Rhodes</a></h6>
-								<span>Senior Manager</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 md-mb-35">
-					<div class="team__one-item">
-						<div class="team__one-item-image">
-							<img src="assets/img/team/team-2.jpg" alt="team">
-							<div class="team__one-item-image-content">
-								<div class="team__one-item-image-icon">
-									<span><i class="fas fa-share-alt"></i></span>
-									<div class="team__one-item-image-social">
-										<ul>
-											<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
-											<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-											<li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<h6><a href="team-details.html">Derya Kurtulus</a></h6>
-								<span>Heating Expert</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 md-mb-35">
-					<div class="team__one-item">
-						<div class="team__one-item-image">
-							<img src="assets/img/team/team-3.jpg" alt="team">
-							<div class="team__one-item-image-content">
-								<div class="team__one-item-image-icon">
-									<span><i class="fas fa-share-alt"></i></span>
-									<div class="team__one-item-image-social">
-										<ul>
-											<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
-											<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-											<li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<h6><a href="team-details.html">Lisa Thompson</a></h6>
-								<span>Senior Engineer</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="team__one-item">
-						<div class="team__one-item-image">
-							<img src="assets/img/team/team-4.jpg" alt="team">
-							<div class="team__one-item-image-content">
-								<div class="team__one-item-image-icon">
-									<span><i class="fas fa-share-alt"></i></span>
-									<div class="team__one-item-image-social">
-										<ul>
-											<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
-											<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-											<li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<h6><a href="team-details.html">David Martinez</a></h6>
-								<span>Senior Technician</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Team Area End -->
+	<!-- Experience Area End -->
+
+	
+
 	<!-- Consultation Area Start -->
-	<div class="consultation__area section-padding pt-0">
+	<div class="consultation__area section-padding">
 		<img class="about__one-shape dark-n" src="assets/img/shape/shape-11.png" alt="shape">
 		<img class="about__one-shape light-n" src="assets/img/shape/shape-11-dark.png" alt="shape">
 		<div class="container">
 			<div class="row al-center">
 				<div class="col-lg-6 lg-mb-25">
 					<div class="consultation__area-left t-right dark_image">
-						<img src="assets/img/pages/consultation.jpg" alt="choose">
-						<div class="content">
-							<img src="assets/img/avatar/user.png" alt="user">
-							<p><span>25,000</span> Customer Satisfaction services</p>
-						</div>
+						<img src="assets/img/pages/consultation.webp" alt="choose">
+
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="consultation__area-right">
 						<div class="consultation__area-right-title">
-							<span class="subtitle-three">consultation</span>
-							<h2>High Quality Solar Energy Solutions</h2>
-							<p>Solar Powering Your Sustainable Scene is a vibrant and compelling phrase that conveys the idea of integrating solar energy,</p>
+							<span class="subtitle-three">Our Mission</span>
+							<h4>Transforming Tomorrow, Today</h4>
+							<h6 style="margin-top: 10px;color: #29a3ff;">Our Mission</h6>
+							<p>At E Cube Services, our mission is simple: to revolutionize the way technology enhances
+								our lives while promoting sustainable practices. We are driven by the belief that
+								innovation can make the world a better place, one smart solution at a time.</p>
+							<h6 style="margin-top: 10px;color: #29a3ff;">Join Our Vision</h6>
+							<p>Ready to step into a smarter, more secure, and sustainable future? Get in touch with us
+								today to learn how E Cube Services can transform your world. Together, let’s create a
+								brighter tomorrow.</p>
 						</div>
-						<div class="consultation__area-right-list">
+						<!-- <div class="consultation__area-right-list">
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="consultation__area-right-list-item sm-mb-25" data-background="assets/img/shape/shape-19.png">
@@ -549,13 +457,54 @@
 									</div>
 								</div>
 							</div>
-                        </div>
+                        </div> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Consultation Area End -->
+       
+	
+    <div class="consultation__area section-padding">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="consultation__area-right">
+						<div class="consultation__area-right-title">
+							<span class="subtitle-three">Why Choose Us?</span>
+							
+							<h4>Why Choose Us?</h4>
+							<ul>
+								<li>
+									<h6 style="margin-top: 10px;color: #29a3ff;">Expertise</h6>
+									<p style="text-align: justify;">With a team of skilled professionals and years of experience, we deliver unmatched expertise in technology solutions.</p>
+								</li>
+								<li>
+									<h6 style="margin-top: 10px;color: #29a3ff;">Quality</h6>
+							        <p>We stand by the quality of our products and services, ensuring they meet the highest standards of performance and reliability</p>
+								</li>
+								<li>
+									<h6 style="margin-top: 10px;color: #29a3ff;">Customer Focus</h6>
+							        <p> Our customers are at the heart of everything we do. We’re committed to providing exceptional service and support, always.</p>
+								</li>
+								<li>
+									<h6 style="margin-top: 10px;color: #29a3ff;">Innovation</h6>
+							        <p>We embrace the latest technological advancements, constantly improving and expanding our offerings to stay ahead of the curve.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+
+
 
 	<!-- Footer Area Start -->
 	<div class="footer__area three" data-background="assets/img/shape/shape-13.png" style="padding-bottom: 50px;">
@@ -594,8 +543,8 @@
 									<ul>
 										<li><a href="about.html">About Us</a></li>
 										<li><a href="blog-grid-three.html">Blog</a></li>
-										<li><a href="testimonial.html">Testimonials</a></li>
-										<li><a href="faq.html">Faqs</a></li>
+										
+										
 										<li><a href="contact-two.html">Contact Us</a></li>
 									</ul>
 								</div>
@@ -610,11 +559,11 @@
 								<h6>Our Services</h6>
 								<div class="footer-widget-menu">
 									<ul>
-										<li><a href="blog-grid-three.html">Wind Turbines</a></li>
-										<li><a href="blog-grid-three.html">Hydropower</a></li>
-										<li><a href="blog-grid-three.html">Solar Panel</a></li>
-										<li><a href="blog-grid-three.html">Fossil Resources</a></li>
-										<li><a href="blog-grid-three.html">Maintenance</a></li>
+										<li><a href="service.html">Wind Turbines</a></li>
+										<li><a href="service.html">Hydropower</a></li>
+										<li><a href="service.html">Solar Panel</a></li>
+										<li><a href="service.html">Fossil Resources</a></li>
+										<li><a href="service.html">Maintenance</a></li>
 									</ul>
 								</div>
 							</div>
@@ -629,9 +578,11 @@
 	<!-- Footer Area End -->
 	<!-- Scroll Btn Start -->
 	<div class="scroll-up">
-		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /> </svg>
+		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+		</svg>
 	</div>
-	<!-- Scroll Btn End -->	
+	<!-- Scroll Btn End -->
 	<!-- Main JS -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
 	<!-- Bootstrap JS -->
@@ -641,16 +592,17 @@
 	<!-- Popper JS -->
 	<script src="assets/js/popper.min.js"></script>
 	<!-- Progressbar JS -->
-	<script src="assets/js/progressbar.min.js"></script>	
+	<script src="assets/js/progressbar.min.js"></script>
 	<!-- Magnific Popup JS -->
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<!-- Swiper Bundle JS -->
 	<script src="assets/js/swiper-bundle.min.js"></script>
-    <!-- Isotope JS -->
+	<!-- Isotope JS -->
 	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<!-- Waypoints JS -->
 	<script src="assets/js/jquery.waypoints.min.js"></script>
 	<!-- Custom JS -->
 	<script src="assets/js/custom.js"></script>
 </body>
+
 </html>
