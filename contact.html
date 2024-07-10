@@ -53,7 +53,7 @@
 		<div class="header__area-menubar-right-sidebar-popup-logo">
 			<a href="index.html"> <img src="assets/img/ecube footer - logo.png" alt="Logo-image"></a>
 		</div>
-		<p>The insurance company assumes the financial risk of covering these events in exchange for the premiums paid by the policyholder. There are many different types of insurance,</p>
+		<p style="text-align: justify;">E Cube Services was born out of a passion for technology and a commitment to a greener future. Our founder, Paresh Mutha (Jain) , envisioned a world where technology not only improves lives but also respects our planet.</p>
 		<div class="header__area-menubar-right-sidebar-popup-contact">
 			<h4 class="mb-30">Get In Touch</h4>
 			<div class="header__area-menubar-right-sidebar-popup-contact-item">
@@ -71,7 +71,7 @@
 				</div>
 				<div class="header__area-menubar-right-sidebar-popup-contact-item-content">
 					<span>Quick Email</span>
-					<h6><a href="mailto:info.help@gmail.com">info.help@gmail.com</a></h6>
+					<h6><a href="mailto:ecubegroupnsk@gmail.com">ecubegroupnsk@gmail.com</a></h6>
 				</div>
 			</div>
 			<div class="header__area-menubar-right-sidebar-popup-contact-item">
@@ -86,7 +86,7 @@
 		</div>
 		<div class="header__area-menubar-right-sidebar-popup-social social__icon">
 			<ul>
-				<li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="https://www.facebook.com/cctvcameraecube/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 				<li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
 				<li><a href="https://behance.net" target="_blank"><i class="fab fa-behance"></i></a></li>
 				<li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -275,7 +275,7 @@
 				<div class="col-lg-7 lg-mb-25">
 					<div class="contact__form-area">
 						<h3>Get In touch</h3>
-						<form action="#">
+						<form method="post" action="Contact-FormEmail.php" id="contact-form">
 							<div class="row">
 								<div class="col-md-6 mb-30">
 									<div class="contact__form-area-item">										
@@ -332,7 +332,7 @@
 										Karanja, Panchavati, Nashik, Maharashtra 422001</p>
 									<div class="social__icon mt-60">
 										<ul>
-											<li><a href="https://facebook.com" target="_blank"><i
+											<li><a href="https://www.facebook.com/cctvcameraecube/" target="_blank"><i
 														class="fab fa-facebook-f"></i></a></li>
 											<li><a href="https://twitter.com" target="_blank"><i
 														class="fa-brands fa-x-twitter"></i></a></li>
@@ -385,6 +385,57 @@
 
 	</div>
 	<!-- Footer Cta Area End -->
+
+	<script>
+		$(function () {
+  
+			// Get the form.
+			var form = $('#contact-form');
+  
+			// Get the messages div.
+			var formMessages = $('.form-messege');
+  
+			// Set up an event listener for the contact form.
+			$(form).submit(function (e) {
+				// Stop the browser from submitting the form.
+				e.preventDefault();
+  
+				// Serialize the form data.
+				var formData = $(form).serialize();
+  
+				// Submit the form using AJAX.
+				$.ajax({
+					type: 'POST',
+					url: $(form).attr('action'),
+					data: formData
+				})
+					.done(function (response) {
+						// Make sure that the formMessages div has the 'success' class.
+						$(formMessages).removeClass('error');
+						$(formMessages).addClass('success');
+  
+						// Set the message text.
+						$(formMessages).text(response);
+  
+						// Clear the form.
+						$('#contact-form input,#contact-form textarea').val('');
+					})
+					.fail(function (data) {
+						// Make sure that the formMessages div has the 'error' class.
+						$(formMessages).removeClass('success');
+						$(formMessages).addClass('error');
+  
+						// Set the message text.
+						if (data.responseText !== '') {
+							$(formMessages).text(data.responseText);
+						} else {
+							$(formMessages).text('Oops! An error occured and your message could not be sent.');
+						}
+					});
+			});
+  
+		});
+	</script>
 
 	<!-- Scroll Btn Start -->
 	<div class="scroll-up">
